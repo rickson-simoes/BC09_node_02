@@ -15,3 +15,6 @@ https://typeorm.io/
 
 # exibir migration que já foram executadas
 `yarn typeorm migration:show`
+
+# MD5 Generator
+`NodeRicksonApp`
