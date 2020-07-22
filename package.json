@@ -1,8 +1,8 @@
 {
-  "name": "BC07NodeJS01",
+  "name": "gobarber",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/rickson-simoes/BC07_node_01.git",
+  "repository": "https://github.com/rickson-simoes/BC09_node_02.git",
   "author": "Rickson <rickson.simoes@hotmail.com>",
   "license": "MIT",
   "dependencies": {
