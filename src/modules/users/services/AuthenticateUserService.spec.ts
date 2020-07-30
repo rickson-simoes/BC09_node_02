@@ -1,6 +1,3 @@
-import { hash } from 'bcryptjs';
-import AppError from '@shared/errors/AppError';
-
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 import AuthenticateUserService from './AuthenticateUserService';
