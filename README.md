@@ -47,8 +47,8 @@
 - A listagem de prestadores deve ser armazenada em cache;
 
 **RN**
-- Cada agendamento deve durar 1h exatamente;
 - Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último às 17h);
-- O usuário não pode agendar em um horário já ocupado;
 - O usuário não pode agendar em um horário que já passou;
 - O usuário não pode agendar serviços com ele mesmo;
+- Cada agendamento deve durar 1h exatamente;
+- O usuário não pode agendar em um horário já ocupado;
