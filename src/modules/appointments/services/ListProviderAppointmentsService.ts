@@ -12,7 +12,7 @@ interface IRequest {
 }
 
 @injectable()
-class ListProviderMonthAvailabilityService {
+class ListProviderAppointmentsService {
   constructor(
     @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
@@ -23,7 +23,18 @@ class ListProviderMonthAvailabilityService {
     year,
     month,
     day,
-  }: IRequest): Promise<Appointment> {}
+  }: IRequest): Promise<Appointment[]> {
+    const appointments = await this.appointmentsRepository.findAllInDayFromProvider(
+      {
+        provider_id,
+        year,
+        month,
+        day,
+      },
+    );
+
+    return appointments;
+  }
 }
 
-export default ListProviderMonthAvailabilityService;
+export default ListProviderAppointmentsService;
