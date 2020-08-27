@@ -1,4 +1,4 @@
-{
+[{
   "type":"postgres",
   "host":"localhost",
   "port":5432,
@@ -14,4 +14,16 @@
   "entities": [
     "./src/modules/**/infra/typeorm/entities/*.ts"
   ]
+},
+{
+  "name":"mongo",
+  "type":"mongodb",
+  "host":"localhost",
+  "port":27017,
+  "database":"gobarber",
+  "useUnifiedTopology": true,
+  "entities": [
+    "./src/modules/**/infra/typeorm/schemas/*.ts"
+  ]
 }
+]
